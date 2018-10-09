@@ -1,0 +1,49 @@
+@font-face {
+  font-family: slasho;
+  src: url(slasho.ttf);
+}
+.spin{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-image: url(spin.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: 20px;
+}
+.wrap{
+  display: none;
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  top: calc(50% - 250px);
+  left: calc(50% - 150px);
+  box-shadow: 0 1px 3px 1px rgba(60,64,67,0.15), 0 1px 2px 0 rgba(60,64,67,0.3);
+}
+.yolo{
+  width: 100%;
+  position: absolute;
+  top: 0px;
+}
+.output{
+  font-family: slasho;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 40px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .wrap{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
